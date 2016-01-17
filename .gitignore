@@ -1,3 +1,14 @@
+pysxmm/bench/cython/*.c
+
+# Emacs files
+*~
+
+# Python
+*.pyc
+
+# vtune files
+vtune/*/r*s
+
 # Object files
 *.o
 *.ko
