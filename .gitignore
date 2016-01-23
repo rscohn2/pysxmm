@@ -1,5 +1,5 @@
-pysxmm/bench/cython/*.c
-pysxmm/bench/cython/*.html
+pysxmm/bench/cyth/*.c
+pysxmm/bench/cyth/*.html
 
 
 # Emacs files
