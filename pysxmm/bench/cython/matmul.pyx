@@ -1,14 +1,16 @@
 import numpy as np
-m = 8
-n = 10
-k = 5
-a = np.arange(m*n, dtype=np.float64).reshape((m,n))
-b = np.arange(n*k, dtype=np.float64).reshape((n,k))
-matmuls = 10000000
+cimport numpy as np
+cdef int m = 20
+cdef int n = 20
+cdef int k = 20
+cdef np.ndarray a = np.arange(m*n, dtype=np.float64).reshape((m,n))
+cdef np.ndarray b = np.arange(n*k, dtype=np.float64).reshape((n,k))
+cdef int matmuls = 10000000
+d = np.dot
 
 def run():
     print 'Start'
     cdef int i
     for i in range(matmuls):
-        c = np.dot(a,b)
+        c = d(a,b)
     print 'Done'

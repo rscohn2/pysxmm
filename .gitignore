@@ -1,4 +1,6 @@
 pysxmm/bench/cython/*.c
+pysxmm/bench/cython/*.html
+
 
 # Emacs files
 *~
